@@ -88,7 +88,16 @@
     --card: 222 47% 8%;
     --border: 217 32% 25%;
   }
-
+   *{
+    @apply border-border;
+   }
+   html{
+    @apply scroll-smooth;
+   }
+   body{
+    @apply bg-background text-forground transition-colors duration-300;
+    font-feature-settings: "rlig" 1, "calt" 1;
+   }
   
 } 
 
@@ -139,4 +148,12 @@
 }
 @utility meteor{
   @apply absolute bg-linear-to-r from-white via-white to-transparent rounded-full;
+  box-shadow: 0 0 10px 2px rgba(255,255,255,0.3);
+}
+
+#root{
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
 }
