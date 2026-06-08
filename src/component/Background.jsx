@@ -37,6 +37,7 @@ export const BackgroundAnimations = () => {
                     opacity: `${item.opacity}`,
                     animationDuration : `${item.animationDuration}`,
                     animationDelay: `${Math.random() * 2}s`
+                    neoColors[Math.floor(Math.random()* neoColors.length
                 }} />
             ))}
         </div>
